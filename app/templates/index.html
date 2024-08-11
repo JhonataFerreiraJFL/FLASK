@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block tile %} {{ super() }} - Index{% endblock %}
+{% block content %}
+<main role="main" class="container">
+    <div class="jumbotron">
+      <h1>Jumbotron example</h1>
+      <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
+      <a class="btn btn-lg btn-outline-primary" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" role="button">View Bootstrap 4.3 docs</a>
+    </div>
+  </main>
+
+  <div class="row newsletter">
+    <div class="input-group mb-3">
+      <input type="email" class="form-control" placeholder="email@example.com" aria-label="email@example.com" aria-describedby="button-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Sign me up!</button>
+      </div>
+      <span class="w-100"></span>
+      <small id="KeywordsHelpBlock" class=" text-muted">
+        Sign up for our newsletter
+      </small>
+    </div>
+  </div>
+
+  <div class="row marketing">
+    <div class="col-lg-6">
+      <div class="card mb-4">
+        <div class="card-body">  
+          <h4 class="card-title">Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body">  
+          <h4 class="card-title">Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="card mb-4">
+        <div class="card-body">  
+          <h4 class="card-title">Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body">  
+          <h4 class="card-title">Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
