@@ -1,5 +1,36 @@
-{% extebds 'base.html' %}
+{% extends 'base.html' %}
 
 {%block content %}
-{{ form }}
+
+<form action="" method="POST">
+    {{ form.csrf_token  }}
+    <div class="col-md-4 col-md-offset-4">
+    <h1>Login</h1>
+    <div class="form-group">
+        <label>Username</label>
+        {{ form.username(class="form-control", placeholder="seu_usuario")}}
+        {% if form.erros.username %}
+    </div>
+    <di class="alert alert-danger", role="alert">
+        {{ form.erros.username}}
+    </di>
+    {% endif %}
+    <div class="form-group">
+        <label>Password</label>
+        {{ form.password(class="form-control") }}
+        {% if form.erros.password %}
+    </div>
+    <di class="alert alert-danger", role="alert">
+        {{ form.erros.password}}
+    </di>
+    {% endif %}
+    <div class="checkbox">
+        <labe>
+            {{ form.remmember_me }} Remmember me
+        </labe>
+    </div>
+    <botton type="submit" class="btn btn-default">Submit</botton>
+
+</form>
+</div>
 {% endblock %}
